@@ -27,7 +27,7 @@ public class Order implements Serializable {
     public double getTotalAmount() {return totalAmount;}
     public OrderStatus getStatus() {return status;}
     public void setStatus(OrderStatus status) {this.status = status;}
-    public LocalDateTime getCreatetime() {return createTime;}
+    public LocalDateTime getCreateTime() {return createTime;}
     @Override
     public String toString(){
         return String.format("[%s] 金额:%.2f 状态:%s", orderId, totalAmount, status.getDesc());
